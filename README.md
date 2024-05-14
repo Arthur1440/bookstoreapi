@@ -24,6 +24,12 @@ php artisan migrate
 php artisan key:generate
 ```
 
+8. Run the seed to feed the database with some test data:
+
+```bash
+php artisan db:seed
+```
+
 8. Run the PHP built-in server:
 
 ```bash

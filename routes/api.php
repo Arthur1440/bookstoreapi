@@ -5,9 +5,6 @@ use App\Http\Controllers\StoreController;
 use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 
-Route::post('v1/login', [AuthController::class, 'login']);
-Route::post('v1/logout', [AuthController::class, 'logout']);
-
 Route::middleware('auth:sanctum')->prefix('/v1')->group(function () {
   
   // Books
@@ -24,3 +21,9 @@ Route::middleware('auth:sanctum')->prefix('/v1')->group(function () {
   Route::put('/stores/{id}', [StoreController::class, 'update']);
   Route::delete('/stores/{id}', [StoreController::class, 'destroy']);
 });
+
+Route::post('v1/login', [AuthController::class, 'login']);
+Route::post('v1/logout', [AuthController::class, 'logout']);
+
+Route::post('v1/login', [AuthController::class, 'login']);
+Route::post('v1/logout', [AuthController::class, 'logout']);

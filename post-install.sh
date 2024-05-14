@@ -1,0 +1,1 @@
+cp -av VerifyCsrfToken.php vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/
